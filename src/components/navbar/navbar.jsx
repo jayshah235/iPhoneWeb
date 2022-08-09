@@ -11,11 +11,11 @@ const Navbar = () => {
           <h3>Dispatch in 48 Hours (working days) - T+1 days. Think of Phones Think of us</h3>
       </div>
       <div className="right">
-<ul>
-    <li>Contact</li>
-    <li>Help</li>
-    <li>Bulk order</li>
-</ul>
+      <ul>
+          <li>Contact Us</li>
+          <li>Help</li>
+          <li>Bulk order</li>
+      </ul>
       </div>
   </div>
   </div>

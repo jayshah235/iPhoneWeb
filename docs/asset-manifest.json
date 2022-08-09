@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/iphoneweb/static/css/main.3df2fd8a.css",
-    "main.js": "/iphoneweb/static/js/main.4581291b.js",
+    "main.js": "/iphoneweb/static/js/main.ff154e69.js",
     "static/js/787.307e5dc9.chunk.js": "/iphoneweb/static/js/787.307e5dc9.chunk.js",
     "static/media/image5.jpg": "/iphoneweb/static/media/image5.31ae390cb386569fa9d7.jpg",
     "static/media/image2.jpg": "/iphoneweb/static/media/image2.633c49c10594a090fb71.jpg",
@@ -22,11 +22,11 @@
     "static/media/airpodspro.png": "/iphoneweb/static/media/airpodspro.9ec1228ea2c01fb6dab1.png",
     "index.html": "/iphoneweb/index.html",
     "main.3df2fd8a.css.map": "/iphoneweb/static/css/main.3df2fd8a.css.map",
-    "main.4581291b.js.map": "/iphoneweb/static/js/main.4581291b.js.map",
+    "main.ff154e69.js.map": "/iphoneweb/static/js/main.ff154e69.js.map",
     "787.307e5dc9.chunk.js.map": "/iphoneweb/static/js/787.307e5dc9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3df2fd8a.css",
-    "static/js/main.4581291b.js"
+    "static/js/main.ff154e69.js"
   ]
 }
