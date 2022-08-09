@@ -1,0 +1,46 @@
+.margin{
+    display: flex;
+    justify-content: space-between;
+  
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    margin: 30px auto;
+    align-items: center;
+}
+
+.imgleft img{
+    max-width: 153px;
+    max-height: 47px;
+}
+
+.border-right{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid;
+    align-self: baseline;
+    margin-right: 10px;
+    padding-right: 10px;
+   
+}
+
+
+.buyright{
+    display: flex;
+
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.topfont{
+    font-size: 11px;
+    font-weight: 400;
+}
+.bottomfont{
+    font-size: 14px;
+    font-weight: 700;
+}

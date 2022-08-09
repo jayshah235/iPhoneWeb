@@ -1,0 +1,39 @@
+.mainmenu{
+   width: 90%;
+   margin:30px  auto;
+
+
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    flex-wrap: wrap;
+}
+.menu span{
+ padding: 10px;
+
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+
+}
+
+/* 
+.afterclass::after{
+    content: '^';
+    margin-left: 5px;
+} */
+
+.afterclass2{
+    position: relative;
+
+}
+
+.dropmenu {
+    position: absolute;
+}

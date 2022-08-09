@@ -1,0 +1,52 @@
+.flexdiv{
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+    flex-wrap: wrap;
+ }
+
+.flexbasis{
+    flex-basis: 20%;
+    position: relative;
+    transition: 0.3S;
+    margin: 20px; 
+}
+
+.flexbasis:hover{
+ transform: scale(1.1);
+}
+.flexbasis img{
+  width: 300px;
+  border-radius: 20px;
+}
+
+.topdiv{
+    margin: 30px 0;
+}
+
+.topdiv h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.paraposition{
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    height: 3.2rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paraposition:hover{
+    background-color: #26c;
+    opacity: 0.8;
+    color: white;
+}

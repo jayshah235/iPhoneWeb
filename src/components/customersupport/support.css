@@ -1,0 +1,48 @@
+.wrap{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 7%);
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.font15{
+    font-size: 15px;
+    font-weight: 600;
+}
+.font12{
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+.part1{
+    position: relative;
+}
+
+.part1::after{
+    content: '';
+    border-right: 1px solid #666;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1;
+    right: -70px;
+}
+
+@media (max-width: 1190px){
+
+    .wrap{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .font12{
+        margin-bottom: 10px;
+    }
+
+    .part1::after{
+        display: none;
+    }
+}

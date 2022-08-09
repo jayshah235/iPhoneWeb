@@ -1,0 +1,9 @@
+.imagesbanner img{
+    background-size: cover;
+    width: 100%;
+    /* min-height: 492px; */
+    object-fit: cover;
+    object-position: top;
+    /* aspect-ratio: 2; */
+
+}

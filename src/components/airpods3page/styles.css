@@ -1,0 +1,109 @@
+.pagemain {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.pagemain img {
+  max-width: 100%;
+}
+
+.airpodsimg {
+  flex-basis: 50%;
+}
+
+.airpodscontent {
+  flex-basis: 50%;
+	align-self: center;
+}
+
+.ordermain {
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.numberorder {
+  display: flex;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  align-items: center;
+  flex-basis: 20%;
+  justify-content: space-evenly;
+	color: rgb(102, 102, 102);
+}
+
+.numberorder input {
+  height: 37px;
+  border: 1px solid rgb(39, 39, 39);
+  border-radius: 5px;
+  text-align: center;
+  align-self: center;
+  width: 100%;
+  flex-basis: 39%;
+}
+
+.orderbtn {
+  display: flex;
+  flex-basis: 80%;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+  background-color: #26c;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.2;
+  border-radius: 7px;
+  border: none;
+}
+
+.fontsz {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.font10 {
+  font-size: 10px;
+  font-weight: 700;
+  color: rgb(34, 102, 204);
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: 700;
+  color: #d26e4b;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.delprice {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(170, 170, 170);
+	margin-left: 10px;
+}
+
+.para14font {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(102, 102, 102);
+	line-height: 1.86;
+}
+
+@media (max-width: 1104px){
+	.pagemain{
+		flex-direction: column;
+	}
+
+	.airpodscontent{
+		align-self: inherit;
+		margin-bottom: 20px;
+	}
+}

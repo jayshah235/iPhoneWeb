@@ -1,0 +1,39 @@
+.main{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(102, 102, 102);
+    margin: auto;
+    padding: 20px 0;
+}
+
+.border{
+    width: 100%;
+   border-bottom: 1px solid #e1e1e1;
+}
+
+.left h3{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.right ul {
+    display: flex;
+
+}
+.right ul li{
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@media (max-width: 810px){
+    .main{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right ul{
+        justify-content: center;
+    }
+}
