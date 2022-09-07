@@ -1,0 +1,7 @@
+.offerimage {
+	width: 70%;
+	margin: auto;
+}
+.offerimage img{
+max-width: 100%;
+}

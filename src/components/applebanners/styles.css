@@ -1,0 +1,29 @@
+.iwatchbannerimage{
+	background-image: url("../images/iwatchbanner.png");
+	height: 250px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+}
+
+.iphonebannerimage{
+	background-image: url("../images/iphonesbanner.png");
+	height: 250px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+}
+
+.airpodsbannerimage{
+	background-image: url("../images/airpodbanner.png");
+	height: 250px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+}

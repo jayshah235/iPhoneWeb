@@ -1,12 +1,12 @@
-import React from 'react'
-import Singlebanner from './singlebanner'
+import React from "react";
+import Singlebanner from "./singlebanner";
 
-const  Indexsingleban = () => {
+const Indexsingleban = () => {
   return (
-    <div>
-       <Singlebanner /> 
-    </div>
-  )
-}
+    <>
+      <Singlebanner />
+    </>
+  );
+};
 
-export default Indexsingleban
+export default Indexsingleban;

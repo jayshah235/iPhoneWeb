@@ -1,12 +1,12 @@
-import React from 'react'
-import Support from './support'
+import React from "react";
+import Support from "./support";
 
 const Indexsupport = () => {
   return (
-  <>
-<Support />
-  </>
-  )
-}
+    <>
+      <Support />
+    </>
+  );
+};
 
-export default Indexsupport
+export default Indexsupport;

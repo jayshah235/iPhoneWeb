@@ -1,24 +1,19 @@
-import Indexbanner from "../bannerslider"
-import Indexsupport from "../customersupport"
-import Indexphones from "../phonessection.jsx"
-import Indexsingleban from "../singlebanner"
-import Indexcollab from "../collabrations"
-import Indexphonebanner from "../iphonebanner"
-
+import Indexbanner from "../bannerslider";
+import Indexsupport from "../customersupport";
+import Indexphones from "../phonessection.jsx";
+import Indexsingleban from "../singlebanner";
+import Indexphonebanner from "../iphonebanner";
 
 const Homepage = () => {
-	return (
-<>
-<Indexbanner />
-<Indexsupport />
-<Indexphones />
-<Indexsingleban/>
-<Indexphonebanner />
-<Indexcollab /> 
+  return (
+    <>
+      <Indexbanner />
+      <Indexsupport />
+      <Indexphones />
+      <Indexsingleban />
+      <Indexphonebanner />
+    </>
+  );
+};
 
-
-</>
-	)
-}
-
-export default Homepage
+export default Homepage;

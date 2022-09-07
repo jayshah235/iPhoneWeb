@@ -1,21 +1,21 @@
-import NavIndex from "../navbar"
-import Nav2index from "../navbar2"
-import Indexmenu from "../dropdownmenu"
-import Indexfooter from "../footer"
-import { Outlet } from "react-router-dom"
+import NavIndex from "../navbar";
+import Nav2index from "../navbar2";
+import Indexmenu from "../dropdownmenu";
+import Indexfooter from "../footer";
+import Indexcollab from "../collabrations";
+import { Outlet } from "react-router-dom";
 
 const Mainpage = () => {
-	return (
-	<>
-<NavIndex />
-<Nav2index />
-<Indexmenu />
-<Outlet />
-<Indexfooter />
+  return (
+    <>
+      <NavIndex />
+      <Nav2index />
+      <Indexmenu />
+      <Outlet />
+      <Indexcollab />
+      <Indexfooter />
+    </>
+  );
+};
 
-	
-	</>
-	)
-}
-
-export default Mainpage
+export default Mainpage;

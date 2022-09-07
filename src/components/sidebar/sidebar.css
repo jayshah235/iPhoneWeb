@@ -1,0 +1,138 @@
+.posabsolute{
+  position: absolute;
+}
+
+.posright {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: red;
+  width: 23rem;
+  padding: 2.5rem;
+  color: #666;
+  background-color: #fff;
+  height: 100%;
+  z-index: 1000;
+  overflow: scroll;
+  /* transition: right 0.3s; */
+}
+
+.widopacity {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sidehead {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 10px;
+}
+.sidehead h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
+}
+.sidehead button {
+  background-color: white;
+  color: #666;
+  border: none;
+  font-weight: 500;
+  transition: right 3s;
+  cursor: pointer;
+}
+
+.sidehead button:hover {
+  color: #26c;
+}
+
+.totalflex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2.1rem;
+  padding: 1.7rem 0 1.5rem;
+  border-top: 1px solid #edeef0;
+  border-bottom: 1px solid #edeef0;
+  line-height: 1;
+}
+
+.totalflex h4 {
+  font-weight: 400;
+  font-size: 16px;
+  align-items: center;
+}
+
+.totalflex p {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(34, 34, 34);
+}
+
+.dynamicdata {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.flex30 {
+  flex-basis: 28%;
+}
+.flex30 img {
+  max-width: 100%;
+}
+.flex70 {
+  flex-basis: 66%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lineheight {
+  line-height: 1.5;
+  align-self: center;
+}
+
+.lineheight h6 {
+  font-size: 14px;
+}
+.lineheight p {
+  color: rgb(34, 34, 34);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.additem {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.productprice {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+}
+
+.additem::after {
+  content: "x";
+  font-size: 20px;
+  margin: 0 6px;
+}
+
+.fitcon {
+  background-color: white;
+  font-size: 15px;
+  border: 2px solid #edeef0;
+  border-radius: 23px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  padding: 10px;
+  cursor: pointer;
+}

@@ -1,36 +1,76 @@
-import './menu.css';
-// import { Link } from 'react-router-dom';
-import { NavLink } from 'react-router-dom'
+import "./menu.css";
+import { NavLink } from "react-router-dom";
+import { IphonesData } from "../../dynamicdata/iphonedata";
 
 const Dropmenu = () => {
+
+  const airPodsData = IphonesData.filter((i) => i.category === 'aripods');
+
+const iwatchData = IphonesData.filter((i) => i.category === 'iwatches')
+
   return (
-  <>
-  <div className="mainmenu">
-      <div className="menu">
-          <span>Home</span>
-          <span className='afterclass'>Iphone</span>
-          <span className='afterclass2'>Iwatches
-         {/* <div className="dropmenu">
-           <div>
-             <p>watch</p>
-             <p>watch</p>
-             <p>watch</p>
-             <p>watch</p>
-           </div>
-         </div> */}
-          
+    <>
+      <div className="mainmenu">
+        <div className="menu">
+          <span className="homeactive">
+            <NavLink to="/">Home</NavLink>
           </span>
-          <span className='afterclass'>Airpods</span>
+          <span className="phonesdropdown">
+            <NavLink to="iphonecard/">IPhone</NavLink>
+            <div className="dropmenu">
+              <ul>
+                {IphonesData.slice(0, 10).map((item) => (
+                  <li>
+                    <NavLink to={`iphonecard/${item.id}`}>{item.model}</NavLink>
+                  </li>
+                ))}
+              </ul>
+              <ul>
+                {IphonesData.slice(10, 20).map((item) => (
+                  <li>
+                    <NavLink to={`iphonecard/${item.id}`}>{item.model}</NavLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </span>
+          <span className="afterclass2">
+            <NavLink to="iwatchcard">IWatches</NavLink>
+            <div className="dropmenu">
+              <ul>
+                {iwatchData.map((item)=> (
+                <li>
+                  <NavLink to={`iwatchcard/${item.id}`}>{item.model} </NavLink>
+                </li>
+                ))}
+              </ul>
+            </div>
+          </span>
+          <span className="afterclass">
+            <NavLink to="airpodscard">Airpods</NavLink>
+            <div className="dropmenu">
+              <ul className="droplist">
+                {airPodsData.map((item) => (
+                <li>
+                <NavLink to={`airpodscard/${item.id}`}>{item.model}</NavLink>
+              </li>
+                ))}
+              </ul>
+            </div>
+          </span>
           <span>
-          <NavLink to="iphoneweb/airpods" className='afterclass'>Accessories</NavLink>
+            <NavLink to="">Accessories </NavLink>
           </span>
-          <span>About us</span>
-          <span>Special discount</span>
+          <span>
+            <NavLink to="">About us</NavLink>
+          </span>
+          <span className="activenone">
+            <NavLink to="discounts">Special discount</NavLink>
+          </span>
+        </div>
       </div>
-  </div>
-  
-  </>
-  )
-}
+    </>
+  );
+};
 
 export default Dropmenu;

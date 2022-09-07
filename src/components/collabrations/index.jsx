@@ -1,12 +1,11 @@
-import Collab from './collab'
+import Collab from "./collab";
 
-
-const  Indexcollab = () => {
+const Indexcollab = () => {
   return (
-    <div>
-        <Collab />
-    </div>
-  )
-}
+    <>
+      <Collab />
+    </>
+  );
+};
 
-export default Indexcollab
+export default Indexcollab;

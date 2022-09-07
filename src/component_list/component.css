@@ -1,0 +1,44 @@
+.appheading {
+  width: 30%;
+  margin: auto;
+  line-height: initial;
+  border-bottom: 1px solid white;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.listdesign {
+  background-color: #0a0a0a;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.listdesign a {
+  text-decoration: none;
+  color: white;
+}
+
+.listwid {
+  width: 90%;
+  margin: auto;
+  list-style-type: disc;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.listwid li {
+  list-style: auto;
+  text-decoration: underline;
+}
+.listwid li a:hover {
+  color: #26c;
+}
+.listwid ol {
+  margin: 20px 30px;
+}
+
+.listwid h3 {
+  font-size: 20px;
+}

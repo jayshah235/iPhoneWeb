@@ -1,11 +1,11 @@
-import Phones from "./phones"
+import Phones from "./phones";
 
 const Indexphones = () => {
   return (
-<>
-<Phones />
-</>
-  )
-}
+    <>
+      <Phones />
+    </>
+  );
+};
 
-export default Indexphones
+export default Indexphones;

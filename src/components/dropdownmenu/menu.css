@@ -1,39 +1,89 @@
-.mainmenu{
-   width: 90%;
-   margin:30px  auto;
-
-
+.mainmenu {
+  width: 90%;
+  margin: 30px auto;
 }
 
-.menu{
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1;
-    flex-wrap: wrap;
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  flex-wrap: wrap;
 }
-.menu span{
- padding: 10px;
-
+.menu span {
+  padding: 10px;
 }
-.menu a{
-    color: black;
-    text-decoration: none;
-
+.menu span:hover,
+.menu span a:hover {
+  color: #26c;
 }
 
-/* 
-.afterclass::after{
+.menu a {
+  color: black;
+  text-decoration: none;
+}
+
+/* .afterclass::after{
     content: '^';
     margin-left: 5px;
 } */
 
-.afterclass2{
-    position: relative;
-
+.afterclass,
+.afterclass2,
+.phonesdropdown {
+  position: relative;
 }
 
 .dropmenu {
-    position: absolute;
+  position: absolute;
+  top: 110%;
+  left: -20px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  background: white;
+  box-shadow: 0 2px 35px rgb(0 0 0 / 10%);
+  display: flex;
+  transition: all 0.2s ease-out;
+}
+
+.dropmenu ul {
+  min-width: 11.6rem;
+  padding: 20px;
+}
+
+.dropmenu ul li {
+  line-height: 1.5;
+  padding: 10px;
+}
+/* .menu span:hover .dropmenu:active {
+  display: none;
+} */
+
+.dropmenu ul li a {
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+}
+
+.afterclass:hover .dropmenu {
+  opacity: 1;
+  visibility: visible;
+}
+.afterclass2:hover .dropmenu {
+  opacity: 1;
+  visibility: visible;
+}
+.phonesdropdown:hover .dropmenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.activenone a.active,
+.homeactive a.active,
+.afterclass a.active, 
+.afterclass2 a.active,
+.phonesdropdown a.active {
+  color: #26c;
 }

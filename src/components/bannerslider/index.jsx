@@ -1,14 +1,12 @@
 import Bannerslider from "./bannerslider";
-import 'swiper/css';
-
+import "swiper/css";
 
 const Indexbanner = () => {
+  return (
+    <>
+      <Bannerslider />
+    </>
+  );
+};
 
-  return(
-      <>
-<Bannerslider />
-      </>
-  )
-}
-
-export default  Indexbanner;
+export default Indexbanner;

@@ -1,0 +1,98 @@
+.cardwidth {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.maincard {
+  flex-basis: 23%;
+  box-shadow: inset 0 0 3px #ececec;
+  margin: 10px;
+}
+
+.flexcard {
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+}
+
+.fixheight {
+  min-height: 138px;
+}
+
+.flexcard img {
+  max-width: 100%;
+  padding: 10px;
+  aspect-ratio: 1;
+}
+
+.priceflex {
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardbtn {
+  border: 2px solid #e4eaec;
+  background-color: #e4eaec;
+  color: #222;
+  outline: 0;
+  padding: 16px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s,
+    box-shadow 0.3s;
+  border-radius: 3px;
+  width: 84%;
+  margin: 5px auto;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cardbtn:hover {
+  color: #222;
+  border-color: #cfdadd;
+  background-color: #cfdadd;
+}
+
+.fonthead {
+  font-size: 14px;
+  font-weight: 700;
+  color: #999;
+}
+
+.color26c {
+  font-size: 10px;
+  font-weight: 400;
+  color: #26c;
+}
+
+.pricefont {
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.delfont {
+  font-size: 11px;
+  color: #999;
+}
+
+@media (max-width: 780px) {
+  .cardwidth {
+    width: 100%;
+  }
+
+  .cardbtn{
+    font-size: 10px;
+  }
+}

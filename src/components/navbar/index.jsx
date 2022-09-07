@@ -1,14 +1,11 @@
-import Navbar from './navbar';
+import Navbar from "./navbar";
 
 const NavIndex = () => {
   return (
-
-        <div>
-<Navbar />
-</div>
-
-
-  )
-}
+    <>
+      <Navbar />
+    </>
+  );
+};
 
 export default NavIndex;
