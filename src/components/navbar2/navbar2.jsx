@@ -9,8 +9,8 @@ const Navbar2 = () => {
   const Parentdata = useContext(Itemscontext);
 
   const [sideClick, setSideClick] = useState(false);
-  const itemsPrices = Parentdata.items.map((i) => i.inCartPrice);
-  const total = itemsPrices.reduce((a, b) => a + b, 0.0);
+  const itemsPrices = Parentdata?.items?.map((i) => i.inCartPrice);
+  const total = itemsPrices?.reduce((a, b) => a + b, 0.0);
 
   const clickData = () => {
     setSideClick(true);

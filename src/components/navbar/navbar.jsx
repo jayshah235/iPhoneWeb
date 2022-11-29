@@ -9,14 +9,14 @@ const Navbar = () => {
     toggleRef(
       (document.body.style.background = "#000000"),
       (document.body.style.color = " white")
-    )
-  }
+    );
+  };
   const refNormalMode = () => {
     toggleRef(
       (document.body.style.background = "#fefefe"),
       (document.body.style.color = " black")
-    )
-  }
+    );
+  };
 
   return (
     <>
@@ -29,16 +29,8 @@ const Navbar = () => {
             </h3>
           </div>
           <div className="modebtn">
-            <button
-              onClick={refDarkMode}>
-              Dark Mode
-            </button>
-            <button
-              onClick={refNormalMode
-              }
-            >
-              Normal Mode
-            </button>
+            <button onClick={refDarkMode}>Dark Mode</button>
+            <button onClick={refNormalMode}>Normal Mode</button>
           </div>
           <div className="right">
             <ul>

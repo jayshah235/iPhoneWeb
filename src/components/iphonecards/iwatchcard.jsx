@@ -6,9 +6,8 @@ const Iwatchcard = () => {
   const Iwatchdata = IphonesData.filter((i) => i.category === "iwatches");
 
   return (
-    <>
       <div className="cardwidth">
-        {Iwatchdata.map((item) => (
+        {Iwatchdata?.map((item) => (
           <Indexcard
           key={item.id}
             image={item.image}
@@ -19,7 +18,6 @@ const Iwatchcard = () => {
             size="(44, GPS+CELLULAR)" />
         ))}
       </div>
-    </>
   );
 };
 

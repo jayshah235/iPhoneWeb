@@ -21,7 +21,7 @@ const Iphonebanner = () => {
         slidesPerView={4}
         slidesPerGroup={1}
       >
-        {Folderdata.map((item, id) => (
+        {Folderdata?.map((item, id) => (
           <SwiperSlide key={id}>
             <div className="mainslidebanner">
               <NavLink to={item.prouctUrl}>

@@ -18,14 +18,14 @@ const iwatchData = IphonesData.filter((i) => i.category === 'iwatches')
             <NavLink to="iphonecard/">IPhone</NavLink>
             <div className="dropmenu">
               <ul>
-                {IphonesData.slice(0, 10).map((item, index) => (
+                {IphonesData?.slice(0, 10)?.map((item, index) => (
                   <li key={index}>
                     <NavLink to={`iphonecard/${item.id}`}>{item.model}</NavLink>
                   </li>
                 ))}
               </ul>
               <ul>
-                {IphonesData.slice(10, 20).map((item, idx) => (
+                {IphonesData?.slice(10, 20)?.map((item, idx) => (
                   <li key={idx}>
                     <NavLink to={`iphonecard/${item.id}`}>{item.model}</NavLink>
                   </li>
@@ -37,7 +37,7 @@ const iwatchData = IphonesData.filter((i) => i.category === 'iwatches')
             <NavLink to="iwatchcard">IWatches</NavLink>
             <div className="dropmenu">
               <ul>
-                {iwatchData.map((item, ind)=> (
+                {iwatchData?.map((item, ind)=> (
                 <li key={ind}>
                   <NavLink to={`iwatchcard/${item.id}`}>{item.model} </NavLink>
                 </li>
@@ -49,7 +49,7 @@ const iwatchData = IphonesData.filter((i) => i.category === 'iwatches')
             <NavLink to="airpodscard">Airpods</NavLink>
             <div className="dropmenu">
               <ul className="droplist">
-                {airPodsData.map((item,idx) => (
+                {airPodsData?.map((item,idx) => (
                 <li key={idx}>
                 <NavLink to={`airpodscard/${item.id}`}>{item.model}</NavLink>
               </li>

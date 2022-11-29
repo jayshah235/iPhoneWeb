@@ -8,22 +8,22 @@ const Airpods3 = (props) => {
   const [qty, setQty] = useState(1);
   const Addcart = useContext(Itemscontext);
   const { itemId } = useParams();
-  const productData = IphonesData.find((i) => i.id === itemId);
+  const productData = IphonesData?.find((i) => i.id === itemId);
   // const productQty = localStorage
   return (
     <>
       <div className="pagemain">
         <figure className="airpodsimg">
-          <img src={productData.image} alt="" />
+          <img src={productData?.image} alt="" />
         </figure>
         <div className="airpodscontent">
-          <h3 className="fontsz">{productData.model}</h3>
+          <h3 className="fontsz">{productData?.model}</h3>
           <h6 className="font10">(Color option at checkout page)</h6>
           <div className="price">
             &#8377;
-            {!!productData.price ? productData.price.toLocaleString() : ""}
+            {!!productData?.price ? productData?.price?.toLocaleString() : ""}
             <del className="delprice">
-              {!!productData.delprice ? productData.delprice : ""}
+              {!!productData?.delprice ? productData?.delprice : ""}
             </del>
           </div>
           <div className="ordermain">
@@ -42,14 +42,14 @@ const Airpods3 = (props) => {
               onClick={() => {
                 Addcart?.setItems([
                   ...Addcart?.items,
-                  ...([{ ...productData, inCartPrice: productData.price * qty }]),
+                  ...([{ ...productData, inCartPrice: productData?.price * qty }]),
                 ]);
               }}
             >
               Add to cart
             </button>
           </div>
-          {!!productData.showChildren && (
+          {!!productData?.showChildren && (
             <p className="para14font">
               - Active Noise Cancellation blocks outside noise, so you can
               immerse yourself in music
@@ -70,7 +70,7 @@ const Airpods3 = (props) => {
               <br />- Sweat and water resistant
             </p>
           )}
-          <img src={productData.specsimg} alt="" />
+          <img src={productData?.specsimg} alt="" />
         </div>
       </div>
     </>

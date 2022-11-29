@@ -7,10 +7,8 @@ const Iphonecard = () => {
   const iphoneCategory = IphonesData.filter((i) => i.category === 'iphones');
 
   return (
-    <>
-    <div>
       <div className="cardwidth">
-      {iphoneCategory.map ((item ) => (
+      {iphoneCategory?.map ((item ) => (
         <Indexcard 
           key={item.id}
           image={item.image}
@@ -28,8 +26,6 @@ const Iphonecard = () => {
         />     
         ))}
          </div>
-        </div>
-    </>
   );
 };
 
