@@ -3,8 +3,9 @@ import { Itemscontext } from "../contextapi/contextapi";
 import { useContext, useState } from "react";
 import { IphonesData } from "../../dynamicdata/iphonedata";
 import { useParams } from "react-router-dom";
+import Helmet from "react-helmet";
 
-const Airpods3 = (props) => {
+const Airpods3 = () => {
   const [qty, setQty] = useState(1);
   const Addcart = useContext(Itemscontext);
   const { itemId } = useParams();
@@ -12,6 +13,9 @@ const Airpods3 = (props) => {
   // const productQty = localStorage
   return (
     <>
+      <Helmet>
+        <title>{productData?.model}</title>
+      </Helmet>
       <div className="pagemain">
         <figure className="airpodsimg">
           <img src={productData?.image} alt="" />
@@ -42,7 +46,9 @@ const Airpods3 = (props) => {
               onClick={() => {
                 Addcart?.setItems([
                   ...Addcart?.items,
-                  ...([{ ...productData, inCartPrice: productData?.price * qty }]),
+                  ...[
+                    { ...productData, inCartPrice: productData?.price * qty },
+                  ],
                 ]);
               }}
             >

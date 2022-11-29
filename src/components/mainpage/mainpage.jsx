@@ -4,6 +4,7 @@ import Indexmenu from "../dropdownmenu";
 import Indexfooter from "../footer";
 import Indexcollab from "../collabrations";
 import { Outlet } from "react-router-dom";
+import TopScroll from "../topscrollbtn";
 
 const Mainpage = () => {
   return (
@@ -13,6 +14,7 @@ const Mainpage = () => {
       <Indexmenu />
       <Outlet />
       <Indexcollab />
+      <TopScroll />
       <Indexfooter />
     </>
   );

@@ -3,7 +3,6 @@ import "./component.css";
 
 const Componentlist = () => {
   return (
-    <>
       <div className="listdesign">
         <h2 className="appheading">Iphone web application components</h2>
         <div className="listwid">
@@ -135,7 +134,6 @@ const Componentlist = () => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 

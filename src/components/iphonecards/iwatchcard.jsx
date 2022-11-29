@@ -1,12 +1,16 @@
 import Indexcard from "./indexcard";
 import "./card.css";
 import { IphonesData } from "../../dynamicdata/iphonedata";
+import Helmet from 'react-helmet'
 
 const Iwatchcard = () => {
   const Iwatchdata = IphonesData.filter((i) => i.category === "iwatches");
 
   return (
     <div className="cardwidth">
+      <Helmet>
+        <title>Iwatches</title>
+      </Helmet>
       {Iwatchdata?.map((item) => (
         <Indexcard
           key={item.id}
