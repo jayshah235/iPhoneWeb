@@ -6,8 +6,7 @@ const Discountpage = () => {
   return (
     <>
     <Helmet>
-      <title>test</title>
-      <meta name="description" content="hilhjl,nk,,hn" />
+      <title>Discount</title>
     </Helmet>
     <figure className="offerimage">
 
