@@ -1,6 +1,3 @@
-import { NavLink } from "react-router-dom";
-
-
 const imagesdata = [
   require("../images/iwatch1.png"),
   require("../images/airpods.png"),
@@ -9,25 +6,22 @@ const imagesdata = [
 ];
 
 export const Folderdata = [
- 
   {
-    
     id: 1,
     imageurl: imagesdata[0],
     heading: "WATCH",
     model: "series6",
     price: "Best price in india",
-    prouctUrl : 'iwatchcard'
+    prouctUrl: "iwatchcard",
   },
- 
+
   {
     id: 2,
     imageurl: imagesdata[1],
     heading: "AIRPODS",
     model: "Airpods Pro",
     price: "Best price in india",
-    prouctUrl : 'airpodscard'
-
+    prouctUrl: "airpodscard",
   },
   {
     id: 3,
@@ -35,8 +29,7 @@ export const Folderdata = [
     heading: "IPHONE",
     model: "iPhone 12",
     price: "Best price in india",
-    prouctUrl : 'iphone12'
-
+    prouctUrl: "iphone12",
   },
   {
     id: 4,
@@ -44,7 +37,6 @@ export const Folderdata = [
     heading: "Iphone",
     model: "iPhone 13Pro",
     price: "Best price in india",
-    prouctUrl : 'iphone13pro'
-
+    prouctUrl: "iphone13pro",
   },
 ];

@@ -7,14 +7,14 @@ const Airpodscard = () => {
   return (
     <>
       <div className="cardwidth">
-        {airPodsData.map((item) => (
+        {airPodsData?.map((item) => (
           <Indexcard
-            key={item.id}
-            image={item.image}
-            model={item.model}
-            price={item.price}
-            delprice={item.delprice}
-            itemId={item.id} />
+            key={item?.id}
+            image={item?.image}
+            model={item?.model}
+            price={item?.price}
+            delprice={item?.delprice}
+            itemId={item?.id} />
         ))}
       </div>
     </>

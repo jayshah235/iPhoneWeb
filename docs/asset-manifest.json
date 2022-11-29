@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/iphoneweb/static/css/main.e325804a.css",
-    "main.js": "/iphoneweb/static/js/main.0b23378c.js",
+    "main.css": "/iphoneweb/static/css/main.f4894b8e.css",
+    "main.js": "/iphoneweb/static/js/main.ca57e9d4.js",
     "static/js/787.307e5dc9.chunk.js": "/iphoneweb/static/js/787.307e5dc9.chunk.js",
     "static/media/image5.jpg": "/iphoneweb/static/media/image5.31ae390cb386569fa9d7.jpg",
     "static/media/image2.jpg": "/iphoneweb/static/media/image2.633c49c10594a090fb71.jpg",
@@ -46,12 +46,12 @@
     "static/media/pic.png": "/iphoneweb/static/media/pic.073c3028033c4c4994f2.png",
     "static/media/iphonexr.png": "/iphoneweb/static/media/iphonexr.463b8e54799fcff39cd2.png",
     "index.html": "/iphoneweb/index.html",
-    "main.e325804a.css.map": "/iphoneweb/static/css/main.e325804a.css.map",
-    "main.0b23378c.js.map": "/iphoneweb/static/js/main.0b23378c.js.map",
+    "main.f4894b8e.css.map": "/iphoneweb/static/css/main.f4894b8e.css.map",
+    "main.ca57e9d4.js.map": "/iphoneweb/static/js/main.ca57e9d4.js.map",
     "787.307e5dc9.chunk.js.map": "/iphoneweb/static/js/787.307e5dc9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e325804a.css",
-    "static/js/main.0b23378c.js"
+    "static/css/main.f4894b8e.css",
+    "static/js/main.ca57e9d4.js"
   ]
 }

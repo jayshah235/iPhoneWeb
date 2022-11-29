@@ -21,7 +21,7 @@ const Airpods3 = (props) => {
           <h6 className="font10">(Color option at checkout page)</h6>
           <div className="price">
             &#8377;
-            {!!productData.price ? productData.price : ""}
+            {!!productData.price ? productData.price.toLocaleString() : ""}
             <del className="delprice">
               {!!productData.delprice ? productData.delprice : ""}
             </del>
@@ -34,7 +34,6 @@ const Airpods3 = (props) => {
                 min={1}
                 max={100}
                 value={qty}
-                // defaultValue={1}
                 onChange={(e) => setQty(e.target.value)}
               />
             </div>

@@ -1,15 +1,13 @@
-import Iwatchcard from "../iphonecards/iwatchcard"
-import Iwatchbanner from "../applebanners/iwatchbanner"
+import Iwatchcard from "../iphonecards/iwatchcard";
+import Iwatchbanner from "../applebanners/iwatchbanner";
 
 const Iwatchespage = () => {
-	return (
-	<>
-	
-	<Iwatchbanner />
-	<Iwatchcard />
-	
-	</>
-	)
-}
+  return (
+    <>
+      <Iwatchbanner />
+      <Iwatchcard />
+    </>
+  );
+};
 
-export default Iwatchespage
+export default Iwatchespage;
