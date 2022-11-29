@@ -9,7 +9,6 @@ const Dropmenu = () => {
 const iwatchData = IphonesData.filter((i) => i.category === 'iwatches')
 
   return (
-    <>
       <div className="mainmenu">
         <div className="menu">
           <span className="homeactive">
@@ -19,15 +18,15 @@ const iwatchData = IphonesData.filter((i) => i.category === 'iwatches')
             <NavLink to="iphonecard/">IPhone</NavLink>
             <div className="dropmenu">
               <ul>
-                {IphonesData.slice(0, 10).map((item) => (
-                  <li>
+                {IphonesData.slice(0, 10).map((item, index) => (
+                  <li key={index}>
                     <NavLink to={`iphonecard/${item.id}`}>{item.model}</NavLink>
                   </li>
                 ))}
               </ul>
               <ul>
-                {IphonesData.slice(10, 20).map((item) => (
-                  <li>
+                {IphonesData.slice(10, 20).map((item, idx) => (
+                  <li key={idx}>
                     <NavLink to={`iphonecard/${item.id}`}>{item.model}</NavLink>
                   </li>
                 ))}
@@ -38,8 +37,8 @@ const iwatchData = IphonesData.filter((i) => i.category === 'iwatches')
             <NavLink to="iwatchcard">IWatches</NavLink>
             <div className="dropmenu">
               <ul>
-                {iwatchData.map((item)=> (
-                <li>
+                {iwatchData.map((item, ind)=> (
+                <li key={ind}>
                   <NavLink to={`iwatchcard/${item.id}`}>{item.model} </NavLink>
                 </li>
                 ))}
@@ -50,8 +49,8 @@ const iwatchData = IphonesData.filter((i) => i.category === 'iwatches')
             <NavLink to="airpodscard">Airpods</NavLink>
             <div className="dropmenu">
               <ul className="droplist">
-                {airPodsData.map((item) => (
-                <li>
+                {airPodsData.map((item,idx) => (
+                <li key={idx}>
                 <NavLink to={`airpodscard/${item.id}`}>{item.model}</NavLink>
               </li>
                 ))}
@@ -69,7 +68,6 @@ const iwatchData = IphonesData.filter((i) => i.category === 'iwatches')
           </span>
         </div>
       </div>
-    </>
   );
 };
 

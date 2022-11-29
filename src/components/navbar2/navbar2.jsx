@@ -17,7 +17,6 @@ const Navbar2 = () => {
   };
 
   return (
-    <>
       <div className="nav2wid">
         <div className="margin">
           <div className="imgleft">
@@ -32,13 +31,12 @@ const Navbar2 = () => {
             </div>
             <div className="flex-column" onClick={clickData}>
               <span className="topfont">Shopping </span>
-              <span className="bottomfont">&#8377;{parseInt(total)}</span>
+              <span className="bottomfont">&#8377;{parseInt(total).toLocaleString()}</span>
             </div>
           </div>
         </div>
         {sideClick && <Sidebar setSideClick={setSideClick} />}
       </div>
-    </>
   );
 };
 

@@ -1,14 +1,20 @@
+import { useEffect } from "react";
 import { createContext, useState } from "react";
 
 export const Itemscontext = createContext(null);
 
 const Contextapi = (props) => {
-  const [items, setItems] = useState([]);
+  const localtorageData = JSON.parse(localStorage.getItem("cart"));
+  const [items, setItems] = useState([...localtorageData]);
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(items));
+  }, [items]);
 
   return (
-    <>
-      <Itemscontext.Provider value={{items, setItems}} >{props.children}</Itemscontext.Provider>
-    </>
+    <Itemscontext.Provider value={{ items, setItems }}>
+      {props.children}
+    </Itemscontext.Provider>
   );
 };
 

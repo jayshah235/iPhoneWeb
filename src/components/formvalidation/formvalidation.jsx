@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./form.css";
+import  FormData  from "./form2";
 
 const Formvalidation = () => {
   const Data = { firstName: "", lastName: "", email: "", password: "" };
@@ -68,6 +69,10 @@ const Formvalidation = () => {
           </form>
         )}    
       </div>
+      <br />
+      <br />
+      <br />
+      <FormData />
     </>
   );
 };

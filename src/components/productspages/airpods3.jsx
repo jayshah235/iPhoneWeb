@@ -9,7 +9,7 @@ const Airpods3 = (props) => {
   const Addcart = useContext(Itemscontext);
   const { itemId } = useParams();
   const productData = IphonesData.find((i) => i.id === itemId);
-
+  // const productQty = localStorage
   return (
     <>
       <div className="pagemain">
@@ -34,13 +34,19 @@ const Airpods3 = (props) => {
                 min={1}
                 max={100}
                 value={qty}
-                defaultValue={1}
-                onChange={(e) => setQty(e.target.value)} />
+                // defaultValue={1}
+                onChange={(e) => setQty(e.target.value)}
+              />
             </div>
             <button
               className="orderbtn"
-              onClick={() =>{
-                Addcart.setItems([...Addcart.items,  {...productData, inCartPrice : productData.price * qty}])}}>
+              onClick={() => {
+                Addcart?.setItems([
+                  ...Addcart?.items,
+                  ...([{ ...productData, inCartPrice: productData.price * qty }]),
+                ]);
+              }}
+            >
               Add to cart
             </button>
           </div>
