@@ -8,7 +8,6 @@ import { NavLink } from "react-router-dom";
 
 const Iphonebanner = () => {
   return (
-    <>
       <Swiper
         speed={1200}
         autoplay={{
@@ -24,22 +23,21 @@ const Iphonebanner = () => {
         {Folderdata?.map((item, id) => (
           <SwiperSlide key={id}>
             <div className="mainslidebanner">
-              <NavLink to={item.prouctUrl}>
+              <NavLink to={item?.prouctUrl}>
                 <div className="phonebanner">
-                  <img src={item.imageurl} alt="" />
+                  <img src={item.imageurl} alt="Error" />
                   <div className="onhovertext"> Quick View </div>
                 </div>
                 <div className="textcenter">
-                  <h5>{item.heading}</h5>
-                  <h3>{item.model} </h3>
-                  <p>{item.price}</p>
+                  <h5>{item?.heading}</h5>
+                  <h3>{item?.model} </h3>
+                  <p>{item?.price}</p>
                 </div>
               </NavLink>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
   );
 };
 

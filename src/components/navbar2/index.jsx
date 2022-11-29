@@ -1,7 +1,43 @@
-import Navbar2 from "./navbar2";
+import "./navbar2.css";
+import images from "../applelogo.png";
+import { NavLink } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Itemscontext } from "../contextapi/contextapi";
+import Sidebar from "../sidebar/sidebar";
 
-const Nav2index = () => {
-  return <Navbar2 />;
+const Navbar2 = () => {
+  const Parentdata = useContext(Itemscontext);
+
+  const [sideClick, setSideClick] = useState(false);
+  const itemsPrices = Parentdata?.items?.map((i) => i.inCartPrice);
+  const total = itemsPrices?.reduce((a, b) => a + b, 0.0);
+
+  const clickData = () => {
+    setSideClick(true);
+  };
+
+  return (
+      <div className="nav2wid">
+        <div className="margin">
+          <div className="imgleft">
+            <NavLink to="/iphoneweb">
+              <img src={images} alt="" />
+            </NavLink>
+          </div>
+          <div className="buyright">
+            <div className="border-right">
+              <span className="topfont">Track </span>
+              <span className="bottomfont">Your order</span>
+            </div>
+            <div className="flex-column" onClick={clickData}>
+              <span className="topfont">Shopping </span>
+              <span className="bottomfont">&#8377;{parseInt(total).toLocaleString()}</span>
+            </div>
+          </div>
+        </div>
+        {sideClick && <Sidebar setSideClick={setSideClick} />}
+      </div>
+  );
 };
 
-export default Nav2index;
+export default Navbar2;

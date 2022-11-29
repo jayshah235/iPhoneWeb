@@ -29,7 +29,7 @@ export const Folderdata = [
     heading: "IPHONE",
     model: "iPhone 12",
     price: "Best price in india",
-    prouctUrl: "iphone12",
+    prouctUrl: "iphonecard/12",
   },
   {
     id: 4,
@@ -37,6 +37,6 @@ export const Folderdata = [
     heading: "Iphone",
     model: "iPhone 13Pro",
     price: "Best price in india",
-    prouctUrl: "iphone13pro",
+    prouctUrl: "iphonecard/17",
   },
 ];

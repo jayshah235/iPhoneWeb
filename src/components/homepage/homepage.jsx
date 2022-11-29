@@ -1,6 +1,6 @@
 import Indexbanner from "../bannerslider";
 import Indexsupport from "../customersupport";
-import Indexphones from "../phonessection.jsx";
+import Indexphones from "../phonessection.jsx/phones.jsx";
 import Indexsingleban from "../singlebanner";
 import Indexphonebanner from "../iphonebanner";
 

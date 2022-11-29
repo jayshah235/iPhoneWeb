@@ -1,5 +1,3 @@
-
-
 .bannerhead {
   width: 80%;
   margin: auto;
@@ -14,12 +12,12 @@
   color: #222;
 }
 
-.mainslidebanner a{
+.mainslidebanner a {
   text-decoration: none;
   color: black;
 }
 
-.phonebanner{
+.phonebanner {
   position: relative;
   margin-bottom: 10px;
 }
@@ -39,7 +37,7 @@
   transition: 0.9s;
 }
 
-.mainslidebanner:hover .onhovertext{
+.mainslidebanner:hover .onhovertext {
   opacity: 1;
   visibility: visible;
 }
@@ -53,17 +51,17 @@
   text-align: center;
   line-height: 1.5;
 }
-.textcenter h5{
+.textcenter h5 {
   text-decoration: none;
   font-size: 12px;
   font-weight: 400;
   color: rgb(153, 153, 153);
 }
-.textcenter h5:hover{
- color: #26c;
+.textcenter h5:hover {
+  color: #26c;
 }
-.textcenter h3:hover{
- color: #26c;
+.textcenter h3:hover {
+  color: #26c;
 }
 .textcenter h3 {
   margin-bottom: 0;
@@ -72,7 +70,7 @@
   color: rgb(102, 102, 102);
 }
 
-.textcenter a{
+.textcenter a {
   text-decoration: none;
 }
 

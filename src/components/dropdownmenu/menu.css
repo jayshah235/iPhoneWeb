@@ -20,16 +20,9 @@
 }
 
 .menu a {
-  /* retify this bug */
-  /* color: black; */
   text-decoration: none;
   color: rgb(94, 94, 94);
 }
-
-/* .afterclass::after{
-    content: '^';
-    margin-left: 5px;
-} */
 
 .afterclass,
 .afterclass2,

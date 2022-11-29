@@ -1,12 +1,12 @@
-import NavIndex from "./components/navbar";
-import Nav2index from "./components/navbar2";
-import Indexmenu from "./components/dropdownmenu";
-import Indexbanner from "./components/bannerslider";
-import Indexsupport from "./components/customersupport";
-import Indexphones from "./components/phonessection.jsx";
-import Indexsingleban from "./components/singlebanner";
-import Indexcollab from "./components/collabrations";
-import Indexfooter from "./components/footer";
+import Navbar from "./components/navbar";
+import Navbar2 from "./components/navbar2";
+import Menu from "./components/dropdownmenu";
+import Bannerslider from "./components/bannerslider";
+import Support from "./components/customersupport";
+import Phones from "./components/phonessection.jsx/phones.jsx";
+import Singlebanner from "./components/singlebanner";
+import Collab from "./components/collabrations";
+import Footer from "./components/footer";
 import Indexphonebanner from "./components/iphonebanner";
 import Mainpage from "./components/mainpage/mainpage";
 import Error from "./components/errorpage/error";
@@ -25,25 +25,27 @@ import Airpodspage from "./components/airpodspage/airpodspage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Formvalidation from "./components/formvalidation/formvalidation";
 import Airpods3 from "./components/productspages/airpods3";
+import ScrollToTop from "./components/scrolltotop";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Componentlist />} />
         <Route path="/iphoneweb" element={<Mainpage />}>
           <Route index element={<Homepage />} />
-          <Route path="index" element={<NavIndex />} />
-          <Route path="navbar" element={<Nav2index />} />
-          <Route path="indexmenu" element={<Indexmenu />} />
-          <Route path="banner" element={<Indexbanner />} />
-          <Route path="support" element={<Indexsupport />} />
-          <Route path="phones" element={<Indexphones />} />
-          <Route path="singlebanner" element={<Indexsingleban />} />
+          <Route path="index" element={<Navbar />} />
+          <Route path="navbar" element={<Navbar2 />} />
+          <Route path="indexmenu" element={<Menu />} />
+          <Route path="banner" element={<Bannerslider />} />
+          <Route path="support" element={<Support />} />
+          <Route path="phones" element={<Phones />} />
+          <Route path="singlebanner" element={<Singlebanner />} />
           <Route path="iphones" element={<Indexphonebanner />} />
-          <Route path="collabrations" element={<Indexcollab />} />
+          <Route path="collabrations" element={<Collab />} />
           <Route path="discounts" element={<Discountpage />} />
-          <Route path="footer" element={<Indexfooter />} />
+          <Route path="footer" element={<Footer />} />
           <Route path="airpodpage" element={<Airpodsbanner />} />
           <Route path="iphonebanner" element={<Iphonebanner2 />} />
           <Route path="iwatchpage" element={<Iwatchbanner />} />

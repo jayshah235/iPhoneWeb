@@ -5,7 +5,6 @@ import { IphonesData } from "../../dynamicdata/iphonedata";
 const Airpodscard = () => {
   const airPodsData = IphonesData.filter((i) => i.category === "aripods");
   return (
-    <>
       <div className="cardwidth">
         {airPodsData?.map((item) => (
           <Indexcard
@@ -17,7 +16,6 @@ const Airpodscard = () => {
             itemId={item?.id} />
         ))}
       </div>
-    </>
   );
 };
 
