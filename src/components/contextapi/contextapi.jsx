@@ -1,7 +1,7 @@
 // import { useEffect } from "react";
 import { createContext, useState } from "react";
 
-export const Itemscontext = createContext(null);
+export const Itemscontext = createContext({});
 
 const Contextapi = (props) => {
   // const localtorageData = JSON.parse(localStorage.getItem("cart"));
