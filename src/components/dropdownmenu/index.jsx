@@ -1,5 +1,5 @@
 import "./menu.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { IphonesData } from "../../dynamicdata/iphonedata";
 
 const Menu = () => {
@@ -12,7 +12,7 @@ const iwatchData = IphonesData.filter((i) => i.category === 'iwatches')
       <div className="mainmenu">
         <div className="menu">
           <span className="homeactive">
-            <NavLink to="/">Home</NavLink>
+            <Link to="/iphoneweb">Home</Link>
           </span>
           <span className="phonesdropdown">
             <NavLink to="iphonecard/">IPhone</NavLink>

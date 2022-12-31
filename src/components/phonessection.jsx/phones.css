@@ -1,8 +1,8 @@
 .flexdiv {
   display: flex;
   justify-content: center;
-  margin: 0 20px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .flexbasis {
@@ -16,7 +16,7 @@
   transform: scale(1.1);
 }
 .flexbasis img {
-  width: 300px;
+  width: 100%;
   border-radius: 20px;
 }
 .flexbasis a {
@@ -52,4 +52,10 @@
   background-color: #26c;
   opacity: 0.8;
   color: white;
+}
+
+@media(max-width: 880px) {
+  .flexbasis{
+    flex-basis: 80%;
+  }
 }

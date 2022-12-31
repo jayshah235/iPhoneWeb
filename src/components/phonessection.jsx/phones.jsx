@@ -25,7 +25,7 @@ const Phones = () => {
           </section>
           <section className="flexbasis">
             <NavLink to="airpodspage">
-              <img src={image3} alt="" />
+              <img src={image3} alt="" loading="lazy" data-src="" />
               <p className="paraposition">Airpods pro</p>
             </NavLink>
           </section>
